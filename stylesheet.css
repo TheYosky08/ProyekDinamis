@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Lucida Grande";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+  }
+
+  span{
+    color: red;
+  }
+  
+  .top-wrapper {
+    background-color: rgb(255, 255, 255);
+    padding: 100px 0 85px 0;
+    background-size: cover;
+    color: black;
+    text-align: center;
+  }
+  
+  .top-wrapper h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 100;
+    font-size: 70px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .top-wrapper p {
+    margin-top: 0px;
+    opacity: 1;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @keyframes zoom-in-out{
+    0% { transform: scale(1); }
+   25% { transform: scale(0.6); }
+   50% { transform: scale(0.7); }
+   75% { transform: scale(0.6); }
+   100% { transform: scale(1); }
+  }
+
+  .Gambar{
+    -webkit-animation:zoom-in-out 2s; /* Safari dan Chrome */
+    -moz-animation:zoom-in-out 2s; /* Firefox */
+    -ms-animation:zoom-in-out 2s; /* Internet Explorer */
+    -o-animation:zoom-in-out 2s; /* Opera */
+    animation:zoom-in-out 2s; /* W3C */
+    animation-name: zoom-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .Gambar:hover{
+    transform: scale(0.6);
+    transition: all 1s scale;
+    filter: grayscale(1);
+    transition-duration: 2s;
+    cursor: pointer;
+  }
+  
+  .top-wrapper p 
+
+  
+  .btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  
+  .btn {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 400px;
+    height: 50px;
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: #323232;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-family: Arial, Helvetica, sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin-top: 19px;
+    letter-spacing: 7px;
+    margin-left: 15px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  ul {
+    float: left;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  ul li {
+    line-height: 35px;
+    padding: 0 25px;
+    color: white;
+    display: inline-flex;
+    transition: all 0.5s;
+  }
+
+  ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    color: white;
+  }
+  
+  ul li :hover {
+    background-color: rgba(119, 235, 255, 0.3);
+    border-radius: 8px;
+    transition: .60s;
+    
+  }
+
+  label #btn,
+  label #close{
+    color: #f7f7f7;
+    font-size: 30px;
+    float: right;
+    margin-left: 40px;
+    line-height: 80px;
+    cursor:pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  
+.email{
+  text-align: center;
+  color: #b3aeb5;
+}
+
+.pesan{
+  text-align: center;
+  color: #b3aeb5;
+}
+.form-control{
+  text-align: center;
+  width: 800px;
+  height: 50px;
+  padding: 1px 1px;
+  margin-bottom: 1px;
+  border: 1px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.formInput{
+  text-align: center;
+  width: 800px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  width: calc(100%-50px);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 1px;
+  border: 1px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 10px;
+}
+  
+.form-pesan{
+  text-align: center;
+  width: 800px;
+  height: 50px;
+  margin-top: 30px;
+  text-align: center;
+  width: calc(100%-50px);
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 1px;
+  border: 1px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 10px;
+}
+  .tentang-saya{
+    width: 100%;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .tentang-saya h1{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 60px;
+    font-size: 25px;
+  }
+
+  .tentang-saya p{
+    margin-left: 20%;
+    width: 60%;
+    padding-bottom: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-align:center;
+  }
+  
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #000000;
+  }
+  
+  .heading h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  
+  .lesson {
+    float: left;
+    width: 33.3%;
+  }
+  
+  .lesson-icon {
+    position: relative;
+  }
+
+  .lesson-icon img{
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    width: 150px;
+  }
+  
+  .lesson-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #000000;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .message-wrapper {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .btn-message {
+    border: none;
+    width: 10%;
+    margin-top: 20px;
+    color: black;
+    font-size: 15px;
+    padding: 15px 40px;
+    background-color: #ffe23c;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px #acacac;
+  }
+  
+  .btn-message:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+  }
+
+
+
+  footer{
+    background-color: #5c5c5c;
+  }
+  
+  footer h1{
+  color: #f7f7f7;
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  letter-spacing: 5px;
+  margin-left: 15px;
+
+  }
+
+  footer ol{
+    margin-left: 15px;
+    font-size: 15px;
+    text-align: right;
+    color: #f7f7f7;
+    line-height: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  footer ol li a{
+    color: #f7f7f7;
+  }
+
+  footer p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  footer {
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .heading-accordion h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 90px;
+    padding-bottom: 10px;
+  }
+
+  .container-accordion{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px 100px;
+    margin: 0 auto;
+
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    border-bottom:#f7f7f7 solid;
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .accordion:hover {
+    background-color: #ccc;
+    transition: 0.5s;
+  }
+
+  .panel {
+    transition-delay: 0.4s;
+    color: white;
+    text-align: left;
+    height: 70px;
+    display: none;
+    padding: 1px 20px 1px 18px;
+    border-radius: 20px;
+    background-color: #5c5c5c;
+  }
+
+
+
+
+  
+  .slider-container {
+    background-color: #eee;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+  }
+
+  .slider-item {
+    display: none; /* Tersembunyi secara default */
+  }
+  
+  img {
+    padding-top: 50px;
+    width: 30%;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 150px;
+    left: 32%;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  /* Animasi */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* POP UP GAMBAR */
+  .mainwrapper {
+    background: #fefefe;
+    display: flex;
+    width: 100%;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Gambar.imgthumb {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* overlay by webprogramminunpas and modified by nelayankode.com*/
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(59, 226, 101, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.overlay .Gambar {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+}
+
+.overlay:target .Gambar {
+    animation: zoomDanFade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    margin-left: -20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 10px;
+    padding: 5px;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+.overlay .container{
+  top: 10px;
+  position: relative;
+  background-color: white;
+  width: 40%;
+  height: 30%;
+  border: 5px #000000 solid;
+  border-radius: 30px;
+  padding-top: 0px 10px 0px 10px;
+}
+/* animasi */
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
