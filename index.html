@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ini adalah Frontend Developer Course">
+    <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, React, Git">
+    <meta name="author" content="Guru Domba">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="path-to-the-image" />
+    <meta property="og:url" content="https://progate.com/" />
+    <meta property="og:title" content="Progate | Learn to code..." />
+    <meta property="og:description" content="Progate is an online platform..." />
+    <title>Proyek HTML dan CSS I</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="/Ninja Ken.png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">NINJA KEN</div>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check">
+          <i class="material-icons" id="btn">subject</i>
+          <i class="material-icons" id="close">close</i>
+        </label>
+        <ul>
+          <li><a href="#">Tentang Saya</a></li>
+          <li><a href="#">Proyek Contoh</a></li> 
+          <li><a href="#">Hubungi Saya</a></li>
+        </ul>
+      </div>
+    </header>
+
+     <div class="top-wrapper">
+      <div class="container">
+        <h1>NINJA KEN<span>.</span></h1>
+        <p>MY PORTFOLIO</p>
+        <img class="Gambar" src="Ninja Ken.png">
+      </div>
+    </div>
+    
+    <div class="tentang-saya">
+      <h1>Tentang Saya</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Itaque beatae dignissimos magni distinctio ipsa, eos architecto porro obcaecati, 
+        saepe nostrum sint ullam consequuntur quidem corporis consequatur enim dolor
+        , quibusdam fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Itaque beatae dignissimos magni distinctio ipsa, eos architecto porro obcaecati, 
+        saepe nostrum sint ullam consequuntur quidem corporis consequatur enim dolor
+        , quibusdam fuga.</p>
+    </div>
+
+
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2><b>Proyek Contoh</b></h2>
+        </div>
+        <!-- Menampilkan thumbnail gambar -->
+        <div class="slider-container">
+
+          <div class="slider-item fade">
+            <a href="#gambar-1">
+            <img class="thumb" src="/1.png" />
+            <p>Ini Gambar 1</p>
+          </a>
+          </div>
+    
+          
+          <div class="slider-item fade">
+            <a href="#gambar-2">
+            <img class="thumb" src="/2.png" />
+            <p>Ini Gambar 2</p>
+          </a>
+          </div>
+
+          <div class="slider-item fade">
+            <a href="#gambar-1">
+            <img class="thumb" src="/1.png" />
+            <p>Ini Gambar 1 tapi yang ke-3</p>
+          </a>
+          </div>
+    
+          <div class="slider-item fade">
+            <a href="#gambar-3">
+            <img class="thumb" src="/3.png" />
+            <p>Ini Gambar 3 tapi yang ke-4</p>
+          </a>
+          </div>
+    
+         
+    
+          <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+          <a class="next" onclick="updateSlide(1)">&#10095;</a>
+
+        </div>
+        <!-- Menampilkan popup gambar -->
+        <div class="overlay" id="gambar-1">
+          <a href="#" class="close">
+              <svg style="width:47px;height:47px" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M12,20C7.59,20 4,16.41 
+                  4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 
+                  16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 
+                  12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,
+                  8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.
+                  41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z" />
+              </svg>
+          </a>
+          <img src="1.png" >
+          <div class="container">
+            <p>Halo</p>
+          </div>
+
+          </div>
+
+          <div class="overlay" id="gambar-2">
+            <a href="#" class="close">
+                <svg style="width:47px;height:47px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,20C7.59,20 4,16.41 
+                    4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 
+                    16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 
+                    12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,
+                    8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.
+                    41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z" />
+                </svg>
+            </a>
+            <img src="2.png" >
+            <div class="container">
+              <p>Halo</p>
+            </div>
+            </div>
+
+            <div class="overlay" id="gambar-3">
+              <a href="#" class="close">
+                  <svg style="width:47px;height:47px" viewBox="0 0 24 24">
+                      <path fill="currentColor" d="M12,20C7.59,20 4,16.41 
+                      4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 
+                      16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 
+                      12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,
+                      8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.
+                      41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z" />
+                  </svg>
+              </a>
+              <img src="3.png" >
+              <div class="container">
+                <p>Halo</p>
+              </div>
+              </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2><b>Hubungi Saya</b></h2>
+        </div>
+
+        <div class="email">
+        <form name="formInput" onsubmit="validasiEmail();">
+        <input type="text" class="form-control" name="email" 
+         placeholder="Email (Diperlukan)">
+        </form>
+       </div>
+
+        <div class="pesan"> 
+        <textarea type="pesan" class="form-pesan" id="floatingOutput" 
+        placeholder="Message (Diperlukan)"></textarea>
+        </div>
+        </div>
+
+        <button class="btn-message" id="button">Kirim</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="container-accordion">
+      <div class="heading-accordion">
+    <h2>FAQ</h2>
+    <button class="accordion">Tentang Saya</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius laboriosam illo id suscipit sunt, eum sequi ad quidem
+         accusamus dolor quisquam facere possimus consequatur hic non? Et, velit! Rerum, quo.</p>
+    </div>
+
+    <button class="accordion">Tentang Kamu</button>
+    <div class="panel">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta odio fugit, quo facilis tempora, dolor omnis, distinctio perspiciatis fugiat in 
+        ratione libero molestiae tempore sint iste officia autem! Consequuntur, iure!</p>
+    </div>
+
+    <button class="accordion">Tentang Kita</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis vero necessitatibus incidunt quia assumenda sint, quo mollitia voluptatibus alias 
+        harum numquam aperiam at obcaecati possimus itaque facilis nisi modi! Iste.</p>
+    </div>
+    </div>
+   </div>
+  </div>
+    <script src="/javascript.js"></script>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo"></div>
+        <h1>NINJA KEN</h1>
+       <ol>
+        <li style="list-style: none;"><a href="Index.html">Tentang Saya</a></li>
+        <li style="list-style: none;"><a href="Index.html">Proyek Contoh</a></li>
+        <li style="list-style: none;"><a href="Index.html">Hubungi Saya</a></li>
+       </ol>
+
+       <p>©Copyright 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
